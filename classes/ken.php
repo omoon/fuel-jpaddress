@@ -16,12 +16,12 @@ class Ken
 {
     public static function getName($kencd)
     {
-        return \Config::get('Jpaddress.kens.'.$kencd);
+        return \Config::get('jpaddress.kens.'.$kencd);
     }
 
     public static function getShortName($kencd)
     {
-        return \Config::get('Jpaddress.short_kens.'.$kencd);
+        return \Config::get('jpaddress.short_kens.'.$kencd);
     }
 
 }
