@@ -101,7 +101,7 @@ class Jpaddress
      *
 	 * @return string 住所
 	 */
-    public function getJushoFromGoogle($zip)
+    public static function getJushoFromGoogle($zip)
     {
         $ret = json_decode(file_get_contents("http://www.google.com/transliterate?langpair=ja-Hira|ja&text=" . $zip));
         if ($ret[0][1][1] == $zip) {
